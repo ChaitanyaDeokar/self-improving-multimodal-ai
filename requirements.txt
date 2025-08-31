@@ -2,5 +2,6 @@ gradio>=4.44.0,<5
 pillow>=10.3.0
 numpy>=1.26,<3
 torch
-transformers
-accelerate
+transformers>=4.41.0
+accelerate>=0.30.0
+timm>=0.9.16
