@@ -1,4 +1,4 @@
-# app.py (fixed)
+# app.py (fixed, no concurrency_count)
 import os, sys, time, traceback, subprocess
 from typing import Tuple, Optional
 from PIL import Image
@@ -53,7 +53,7 @@ with gr.Blocks(title=TITLE, analytics_enabled=False) as demo:
                 type="pil",
                 label="Image",
                 height=320,
-                sources=["upload", "webcam", "clipboard"],  # ✅ fixed
+                sources=["upload", "webcam", "clipboard"],  # valid
             )
             q_in = gr.Textbox(label="Question", placeholder="e.g., What colour is the bus?", lines=2, max_lines=4)
             source_in = gr.Radio(CONTROLLER_SOURCES, value="auto", label="Controller Source")
@@ -73,5 +73,5 @@ with gr.Blocks(title=TITLE, analytics_enabled=False) as demo:
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", "7860"))
-    demo.queue(concurrency_count=2)
+    demo.queue()  #  no concurrency_count
     demo.launch(server_name="0.0.0.0", server_port=port, share=False, show_error=True)
