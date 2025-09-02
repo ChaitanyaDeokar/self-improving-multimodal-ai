@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: VQA Memory  RL Controller
 emoji: 🔥
@@ -10,3 +11,6 @@ pinned: false
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+=======
+# self-improving-multimodal-ai
+>>>>>>> af07dbba723d03e4493f77170cfc419361e291b7
