@@ -88,3 +88,4 @@ Explore cost-aware reward shaping for production.
 
 Chaitanya Rajesh Deokar
 MSc in Computing (Data Science) – Technological University Dublin
+📫 [LinkedIn](https://www.linkedin.com/in/chaitanya-deokar/) | [Hugging Face](https://huggingface.co/cd2412) | [GitHub](https://github.com/ChaitanyaDeokar)  
